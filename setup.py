@@ -9,9 +9,10 @@ setup(
     author='Sam Kingston',
     author_email='sam@sjkwi.com.au',
     description='Breadcrumbs app for Django',
+    long_description='See https://github.com/sjkingo/django-breadcrumbs3 for the README',
     url='https://github.com/sjkingo/django-breadcrumbs3',
     install_requires=[
-        'Django',
+        'Django>=1.7',
     ],
     packages=find_packages(),
     classifiers=[
@@ -25,6 +26,7 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
         'Topic :: Software Development :: Libraries :: Application Frameworks',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
