@@ -1,0 +1,20 @@
+sudo: false
+language: python
+python:
+  - "2.7"
+  - "3.3"
+  - "3.4"
+env:
+  - DJANGO_VERSION="1.7"
+  - DJANGO_VERSION="1.8"
+install: 
+  - pip install -q --upgrade pip --use-mirrors
+  - pip install -q Django==$DJANGO_VERSION --use-mirrors
+before_script:
+  - django-admin startproject test_breadcrumbs3
+  - cd test_breadcrumbs3
+script:
+  - python manage.py test breadcrumbs3
+branches:
+  only:
+    - master
