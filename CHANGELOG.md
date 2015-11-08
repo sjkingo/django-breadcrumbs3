@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3 - 2015-11-08
+
+* Added test cases for new settings
+
 ## 1.0.2 - 2015-11-08
 
 * Renamed `BREADCRUMBS_ADD_HOME` setting to `BREADCRUMBS_HOME_LINK` and changed

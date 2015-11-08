@@ -18,5 +18,6 @@ def some_view_no_url(request):
     return render(request)
 
 def some_view_with_url(request):
-    request.breadcrumbs('Some other title', '/theres-just-no-stopping-in-a-white-zone/')
+    from .tests import BreadcrumbsTest as test
+    request.breadcrumbs('Some other title', test.s)
     return render(request)
