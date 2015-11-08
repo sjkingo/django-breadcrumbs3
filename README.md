@@ -12,6 +12,7 @@ A full test suite is provided and it works with:
 
 \* Note: Python 3.3 is unsupported on Django 1.9b1, and Python 3.5 is unsupported on Django 1.7.
 
+[![PyPI](https://img.shields.io/pypi/v/django-breadcrumbs3.svg)](https://pypi.python.org/pypi/django-breadcrumbs3)
 [![Build Status](https://travis-ci.org/sjkingo/django-breadcrumbs3.svg)](https://travis-ci.org/sjkingo/django-breadcrumbs3)
 
 ## Installation
