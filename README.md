@@ -14,6 +14,14 @@ versions and Pytrhon 2.7 as well.
    `TEMPLATE_CONTEXT_PROCESSORS` (pre-Django 1.8) or `TEMPLATES.OPTIONS.context_processors` (1.8+) setting.
 4. Add `breadcrumbs3.middleware.BreadcrumbMiddleware` to `MIDDLEWARE_CLASSES`.
 
+## Testing
+
+You can run the tests through Django's test runner:
+
+```
+$ python manage.py test breadcrumbs3
+```
+
 ## Using breadcrumbs3
 
 There are two parts to generating breadcrumbs: adding each *crumb* in your
