@@ -9,7 +9,7 @@ versions and Pytrhon 2.7 as well.
 ## Installation
 
 1. `$ pip install django-breadcrumbs3`
-2. Add `breadcrumbs3` to your `INSTALLED_APPS` setting.
+2. Add `breadcrumbs3` to your `INSTALLED_APPS` setting (this is to provide access to the template tag).
 3. Make sure `django.template.context_processors.request` is present in your
    `TEMPLATE_CONTEXT_PROCESSORS` (pre-Django 1.8) or `TEMPLATES.OPTIONS.context_processors` (1.8+) setting.
 4. Add `breadcrumbs3.middleware.BreadcrumbMiddleware` to `MIDDLEWARE_CLASSES`.
