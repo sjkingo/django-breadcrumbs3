@@ -120,3 +120,10 @@ Breadcrumbs are rendered as a list like so:
     ...
 </ul>
 ```
+
+## Configuration options
+
+A link to the homepage (defaults to `('Home', '/')`) is added to the start of
+every breadcrumb list. You can disable this behaviour by setting
+`BREADCRUMB_ADD_HOME` to `False` in your settings. If missing, it defaults to
+`True`.
