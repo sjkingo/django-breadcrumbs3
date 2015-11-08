@@ -123,7 +123,11 @@ Breadcrumbs are rendered as a list like so:
 
 ## Configuration options
 
-A link to the homepage (defaults to `('Home', '/')`) is added to the start of
-every breadcrumb list. You can disable this behaviour by setting
-`BREADCRUMB_ADD_HOME` to `False` in your settings. If missing, it defaults to
-`True`.
+By default, a link to the homepage is added to the start of every breadcrumb list.
+
+You can disable this by setting `BREADCRUMBS_HOME_LINK = False` in your settings.
+
+The name and URL used for this can be configured too:
+
+* `BREADCRUMBS_HOME_LINK_NAME`: defaults to `Home`
+* `BREADCRUMBS_HOME_LINK_URL`: defaults to `/`

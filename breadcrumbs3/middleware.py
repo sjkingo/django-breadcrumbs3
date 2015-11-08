@@ -33,8 +33,12 @@ class Breadcrumbs(object):
         # We must clear the list on every request or we will get duplicates
         del self._bc[:]
 
-        if getattr(settings, 'BREADCRUMBS_ADD_HOME', False):
-            self._add('Home', '/')
+        # By default, add a link to the homepage. This can be disabled or
+        # configured in the project settings.
+        if getattr(settings, 'BREADCRUMBS_HOME_LINK', True):
+            home_name = getattr(settings, 'BREADCRUMBS_HOME_LINK_NAME', 'Home')
+            home_url = getattr(settings, 'BREADCRUMBS_HOME_LINK_URL', '/')
+            self._add(home_name, home_url)
 
     def __call__(self, *args, **kwargs):
         return self._add(*args, **kwargs)
