@@ -3,8 +3,12 @@
 A small app to provide ready-to-go breadcrumb support in Django by removing
 the generation of breadcrumbs out of the templates.
 
-It has been tested on Django 1.8 and Python 3.4, but should work on lower
-versions and Pytrhon 2.7 as well.
+It is known to work with:
+
+* Python 2.7+, 3.3+, 3.4+
+* Django 1.7+, 1.8+
+
+[![Build Status](https://travis-ci.org/sjkingo/django-breadcrumbs3.svg)](https://travis-ci.org/sjkingo/django-breadcrumbs3)
 
 ## Installation
 
