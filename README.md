@@ -5,8 +5,10 @@ the generation of breadcrumbs out of the templates.
 
 It is known to work with:
 
-* Python 2.7+, 3.3+, 3.4+
+* Python 2.7+, 3.4+, 3.5+
 * Django 1.7+, 1.8+, 1.9b1
+
+Python 3.3 is unsupported as it has been dropped upstream by Django starting in 1.9.
 
 [![Build Status](https://travis-ci.org/sjkingo/django-breadcrumbs3.svg)](https://travis-ci.org/sjkingo/django-breadcrumbs3)
 
