@@ -10,6 +10,7 @@ env:
 install: 
   - pip install -q --upgrade pip
   - pip install -q Django==$DJANGO_VERSION
+  - pip install -q .
 before_script:
   - django-admin startproject test_breadcrumbs3
   - cd test_breadcrumbs3
