@@ -6,7 +6,7 @@ the generation of breadcrumbs out of the templates.
 It is known to work with:
 
 * Python 2.7+, 3.3+, 3.4+
-* Django 1.7+, 1.8+
+* Django 1.7+, 1.8+, 1.9b1
 
 [![Build Status](https://travis-ci.org/sjkingo/django-breadcrumbs3.svg)](https://travis-ci.org/sjkingo/django-breadcrumbs3)
 
