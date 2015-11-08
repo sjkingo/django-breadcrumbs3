@@ -1,7 +1,7 @@
 from django.core.urlresolvers import reverse
 from django.test import TestCase, override_settings
 
-TEMPLATES = [
+TEMPLATES_DJANGO_18 = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'OPTIONS': {
@@ -15,7 +15,10 @@ TEMPLATES = [
 @override_settings(
     ROOT_URLCONF='breadcrumbs3.tests.urls',
     INSTALLED_APPS=['breadcrumbs3'],
-    TEMPLATES=TEMPLATES,
+    # for Django <= 1.7
+    TEMPLATE_CONTEXT_PROCESSORS=['django.core.context_processors.request'],
+    # for Django >= 1.8
+    TEMPLATES=TEMPLATES_DJANGO_18,
     MIDDLEWARE_CLASSES=['breadcrumbs3.middleware.BreadcrumbMiddleware'],
 )
 class BreadcrumbsTest(TestCase):
